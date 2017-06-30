@@ -1,8 +1,8 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
-msgid "Screen"
-msgstr "屏幕"
+msgid "Screen Setting"
+msgstr "屏幕配置"
 
 msgid "Customize your device screen"
 msgstr "自定义你的设备屏幕"
