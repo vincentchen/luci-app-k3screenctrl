@@ -2,7 +2,7 @@
 uci -q batch <<-EOF >/dev/null
 	delete ucitrack.@k3screenctrl[-1]
 	add ucitrack k3screenctrl
-	set ucitrack.@k3screenctrl[-1].init=k3screenctrl
+	set ucitrack.@k3screenctrl[-1].exec="/etc/init.d/k3screenctrl restart"	
 	commit ucitrack
 EOF
 exit 0
