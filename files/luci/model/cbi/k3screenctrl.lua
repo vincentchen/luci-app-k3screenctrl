@@ -1,7 +1,7 @@
 -- Copyright (C) 2017 XiaoShan https://www.mivm.cn
 local m, s ,o
 
-m = Map("k3screenctrl", translate("Screen"), translate("Customize your device screen"))
+m = Map("k3screenctrl", translate("Screen Setting"), translate("Customize your device screen"))
 s = m:section(TypedSection, "general", translate("General Setting") ,translate("If it does not take effect immediately, please reboot the system."))
 s.anonymous = true
 o = s:option(ListValue, "screen_time", translate("Screen time :"), translate("This time no action, the screen will close."))
@@ -30,6 +30,9 @@ o = s:option(Flag, "psk_hide", translate("Hide Wireless password"))
 o.default = 0
 
 o = s:option(Flag, "cputemp", translate("Display CPU temperature"), translate("The first page shows the CPU temperature."))
+o.default = 0
+
+o = s:option(Flag, "usb3_disable", translate("Switch off USB3.0"), translate("Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."))
 o.default = 0
 
 o = s:option(Button,"test_print",translate("Test"),translate("Execute k3screenctrl -t and return the result"))

@@ -16,6 +16,12 @@ msgstr "如果没有立即生效，请重启系统。"
 msgid "Screen time :"
 msgstr "亮屏时间："
 
+msgid "Switch off USB3.0"
+msgstr "关闭 USB3.0"
+
+msgid "Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."
+msgstr "关闭 USB3.0，降低对 2.4G 无线干扰，<b><font color=\"red\">重启路由生效</font></b>."
+
 msgid "This time no action, the screen will close."
 msgstr "这段时间没有操作，屏幕将关闭。"
 
