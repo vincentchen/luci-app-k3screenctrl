@@ -16,6 +16,9 @@ msgstr "如果没有立即生效，请重启系统。"
 msgid "Screen time :"
 msgstr "亮屏时间："
 
+msgid "Uptime after startup"
+msgstr "显示运行时间"
+
 msgid "Switch off USB3.0"
 msgstr "关闭 USB3.0"
 

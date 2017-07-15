@@ -32,6 +32,9 @@ o.default = 0
 o = s:option(Flag, "cputemp", translate("Display CPU temperature"), translate("The first page shows the CPU temperature."))
 o.default = 0
 
+o = s:option(Flag, "router_uptime", translate("Uptime after startup"))
+o.default = 0
+
 o = s:option(Flag, "usb3_disable", translate("Switch off USB3.0"), translate("Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."))
 o.default = 0
 
