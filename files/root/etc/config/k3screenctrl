@@ -7,3 +7,4 @@ config general
 	option usb3_disable '1'
 	option router_uptime '0'
 	option route_mode 'none'
+	option dis_apdata '0'
