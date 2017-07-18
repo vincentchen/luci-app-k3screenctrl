@@ -36,7 +36,13 @@ o = s:option(Flag, "router_uptime", translate("Uptime after startup"))
 o.default = 0
 
 o = s:option(Flag, "usb3_disable", translate("Switch off USB3.0"), translate("Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."))
-o.default = 0
+o.default = 1
+
+o = s:option(ListValue, "route_mode", translate("Operating Mode"), translate("Display partial data when APmode is enabled, Use \'Router Mode\' to disable \'AP mode\'."))
+o.default = "none"
+o:value("none",translate("Current Mode"))
+o:value("apmode",translate("AP Mode"))
+o:value("dhcpmode",translate("Router Mode"))
 
 o = s:option(Button,"test_print",translate("Test"),translate("Execute k3screenctrl -t and return the result"))
 o.inputtitle = translate("Print info")
