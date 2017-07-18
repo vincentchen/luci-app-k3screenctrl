@@ -44,9 +44,6 @@ o:value("none",translate("Current Mode"))
 o:value("apmode",translate("AP Mode"))
 o:value("dhcpmode",translate("Router Mode"))
 
-o = s:option(Flag, "dis_apdata", translate("Data for APmode"), translate("Display device data when AP Mode used."))
-o.default = 0
-
 o = s:option(Button,"test_print",translate("Test"),translate("Execute k3screenctrl -t and return the result"))
 o.inputtitle = translate("Print info")
 o.write = function()

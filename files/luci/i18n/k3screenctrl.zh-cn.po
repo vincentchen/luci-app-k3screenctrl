@@ -29,13 +29,7 @@ msgid "Router Mode"
 msgstr "路由模式"
 
 msgid "Display partial data when APmode is enabled, Use Router Mode to disable AP mode."
-msgstr "AP模式，请通过WAN网口连接，AP自身管理地址由上级路由DHCP分配，如需固定请修改Lan口地址。</br>关闭AP模式请选回“路由模式”；两种模式均为一次性动作，切换完成之后运行模式将被自动修改为“当前模式”"
-
-msgid "Data for APmode"
-msgstr "AP模式时屏幕显示"
-
-msgid "Display device data when AP Mode used."
-msgstr "使用AP模式时候，可以勾选此项，使屏幕能够读取无线设备在线列表"
+msgstr "AP模式，请通过WAN网口连接，AP自身管理地址由上级路由DHCP分配，如需固定请修改Lan口地址。</br>关闭AP模式请选回“路由模式”，两种模式均为一次性动作，切换完成之后运行模式将被自动修改为“当前模式”"
 
 msgid "Uptime after startup"
 msgstr "显示运行时间"
