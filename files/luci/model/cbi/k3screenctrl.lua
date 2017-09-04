@@ -32,7 +32,10 @@ o.default = 0
 o = s:option(Flag, "cputemp", translate("Display CPU temperature"), translate("The first page shows the CPU temperature."))
 o.default = 0
 
-o = s:option(Flag, "router_uptime", translate("Uptime after startup"))
+o = s:option(ListValue, "router_uptime", translate("Other Setting"), translate("Display Mac Address or Lan IP Address or Router Uptime"))
+o:value("2",translate("Mac Address"))
+o:value("0",translate("Lan IP Address"))
+o:value("1",translate("Router Uptime"))
 o.default = 0
 
 o = s:option(Flag, "usb3_disable", translate("Switch off USB3.0"), translate("Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."))
