@@ -32,12 +32,6 @@ o.default = 0
 o = s:option(Flag, "cputemp", translate("Display CPU temperature"), translate("The first page shows the CPU temperature."))
 o.default = 0
 
-o = s:option(ListValue, "router_uptime", translate("Other Setting"), translate("Display Mac Address or Lan IP Address or Router Uptime"))
-o:value("2",translate("Mac Address"))
-o:value("0",translate("Lan IP Address"))
-o:value("1",translate("Router Uptime"))
-o.default = 0
-
 o = s:option(Flag, "usb3_disable", translate("Switch off USB3.0"), translate("Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."))
 o.default = 1
 
@@ -46,6 +40,12 @@ o.default = "none"
 o:value("none",translate("Current Mode"))
 o:value("apmode",translate("AP Mode"))
 o:value("dhcpmode",translate("Router Mode"))
+
+o = s:option(ListValue, "router_uptime", translate("Other Setting"), translate("Display Mac Address or Lan IP Address or Router Uptime"))
+o:value("2",translate("Mac Address"))
+o:value("0",translate("Lan IP Address"))
+o:value("1",translate("Router Uptime"))
+o.default = 0
 
 o = s:option(Button,"test_print",translate("Test"),translate("Execute k3screenctrl -t and return the result"))
 o.inputtitle = translate("Print info")
