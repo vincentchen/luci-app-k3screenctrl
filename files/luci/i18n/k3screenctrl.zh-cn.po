@@ -50,7 +50,7 @@ msgid "Switch off USB3.0"
 msgstr "USB抗干扰"
 
 msgid "Choose Which WebShell Service to Use"
-msgstr "选择要使用的 WebShell 程序"
+msgstr "选择要使用的 WebShell 程序，重启生效"
 
 msgid "Turn off USB3.0, reduce effects of interference to 2.4G wireless, <b><font color=\"red\">it works after rebooted</font></b>."
 msgstr "勾选以关闭 USB3.0，降低对 2.4G 无线干扰，<b><font color=\"red\">重启路由生效</font></b>."
