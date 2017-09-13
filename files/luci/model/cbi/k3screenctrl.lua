@@ -47,6 +47,11 @@ o:value("0",translate("Lan IP Address"))
 o:value("1",translate("Router Uptime"))
 o.default = 0
 
+o = s:option(ListValue, "webshell", translate("WebShell"), translate("Choose Which WebShell Service to Use"))
+o:value("ttyd",translate("ttyd"))
+o:value("shellinabox",translate("shellinabox"))
+o.default = "ttyd"
+
 o = s:option(Button,"test_print",translate("Test"),translate("Execute k3screenctrl -t and return the result"))
 o.inputtitle = translate("Print info")
 o.write = function()
