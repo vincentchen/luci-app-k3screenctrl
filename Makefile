@@ -52,10 +52,12 @@ if [ -z "$${IPKG_INSTROOT}" ]; then
 	fi
 	rm -rf /tmp/luci-indexcache /tmp/luci-modulecache
 fi
+sh /etc/oui/update_oui.sh
 exit 0
 endef
 
 define Package/$(PKG_NAME)/install
+	$(INSTALL_DIR) $(1)/etc/oui
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/controller
 	$(INSTALL_DATA) ./files/luci/controller/k3screenctrl.lua $(1)/usr/lib/lua/luci/controller/
 	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
@@ -66,6 +68,7 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_CONF) ./files/root/etc/config/k3screenctrl $(1)/etc/config/k3screenctrl
 	$(INSTALL_CONF) ./files/root/etc/k3screenctrl-apmode $(1)/etc/k3screenctrl-apmode
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
+	$(INSTALL_BIN) ./files/root/etc/oui/update_oui.sh $(1)/etc/oui/update_oui.sh
 	$(INSTALL_BIN) ./files/root/etc/uci-defaults/luci-app-k3screenctrl $(1)/etc/uci-defaults/luci-app-k3screenctrl
 endef
 

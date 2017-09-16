@@ -59,6 +59,12 @@ o.write = function()
 	luci.http.redirect(luci.dispatcher.build_url("admin","system","k3screenctrl"))
 end
 
+o = s:option(Button,"Download_Oui",translate("downloadOui"),translate("Update Oui config file!"))
+o.inputtitle = translate("downloadOui")
+o.write = function()
+        luci.sys.call("sh /etc/oui/update_oui.sh")
+end
+
 s = m:section(TypedSection, "device_custom", translate("Device customization") ,translate("Customize the fifth page of device information"))
 s.template = "cbi/tblsection"
 s.addremove = true
