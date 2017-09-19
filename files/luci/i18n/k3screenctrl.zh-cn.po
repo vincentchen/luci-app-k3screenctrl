@@ -196,7 +196,7 @@ msgstr "小米"
 msgid "ZTE"
 msgstr "中兴"
 
-msgid "updateOui"
+msgid "Update Oui"
 msgstr "更新Oui"
 
 msgid "Update Oui config file!"

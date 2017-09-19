@@ -59,8 +59,8 @@ o.write = function()
 	luci.http.redirect(luci.dispatcher.build_url("admin","system","k3screenctrl"))
 end
 
-o = s:option(Button,"Download_Oui",translate("downloadOui"),translate("Update Oui config file!"))
-o.inputtitle = translate("downloadOui")
+o = s:option(Button,"Download_Oui",translate("Update Oui"),translate("Update Oui config file!"))
+o.inputtitle = translate("Update Oui")
 o.write = function()
         luci.sys.call("sh /etc/oui/update_oui.sh")
 end

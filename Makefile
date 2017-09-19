@@ -69,6 +69,7 @@ define Package/$(PKG_NAME)/install
 	$(INSTALL_CONF) ./files/root/etc/k3screenctrl-apmode $(1)/etc/k3screenctrl-apmode
 	$(INSTALL_DIR) $(1)/etc/uci-defaults
 	$(INSTALL_BIN) ./files/root/etc/oui/update_oui.sh $(1)/etc/oui/update_oui.sh
+	$(INSTALL_DATA) ./files/root/etc/oui/oui.txt $(1)/etc/oui/oui.txt
 	$(INSTALL_BIN) ./files/root/etc/uci-defaults/luci-app-k3screenctrl $(1)/etc/uci-defaults/luci-app-k3screenctrl
 endef
 
