@@ -52,7 +52,7 @@ if [ -z "$${IPKG_INSTROOT}" ]; then
 	fi
 	rm -rf /tmp/luci-indexcache /tmp/luci-modulecache
 fi
-mkdir -p /tmp/k3screenctrl
+#mkdir -p /tmp/k3screenctrl
 sh /etc/oui/update_oui.sh
 exit 0
 endef
